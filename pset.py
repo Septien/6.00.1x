@@ -5,20 +5,44 @@ Created on Tue Sep  6 19:29:26 2016
 @author: Phantom
 
 Problem Set 1
-Problema 2
+Problema 3
 
 Assume s is a string of lower case characters.
 
-Write a program that prints the number of times the string 'bob' occurs in s. 
-For example, if s = 'azcbobobegghakl', then your program should print
-Number of times bob occurs is: 2
+Write a program that prints the longest substring of s in which the letters 
+occur in alphabetical order. For example, if s = 'azcbobobegghakl', then your 
+program should print:
+
+Longest substring in alphabetical order is: beggh
+
+In the case of ties, print the first substring. For example, if s = 'abcbcd',
+then your program should print:
+
+Longest substring in alphabetical order is: abc
 """
-s = 'ibobobboboboolciobobbobbbobbbo'
-count = 0
-l = len(s)
-for i in range(l):
-    if i + 1 >= l or i + 2 >= l:
-        break
-    if s[i] == 'b' and s[i+1] == 'o' and s[i+2] == 'b':
-        count += 1
-print ("Number of times bob occurs is: " + str(count))
+s = 'dggknvaakmllsseckbolln'
+subs = ''
+subs1 = ''
+pos = 0
+for char in s:
+    if pos == 0:
+        subs += char
+        pos += 1
+    else:
+        if char >= subs[pos - 1]:
+            subs += char
+            pos += 1
+        else:
+            if len(subs) > len(subs1):
+                subs1 = subs
+                subs = ''
+                subs += char
+                pos = 1
+            else:
+                subs = ''
+                subs += char
+                pos = 1
+if len(subs1) >= len(subs):
+    print("Longest substring in alphabetical orderis: " + subs1)
+else:
+    print("Longest substring in alphabetical orderis: " + subs)
