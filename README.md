@@ -1,10 +1,4 @@
-Repository created for the programms required for the edx
-Course 6.00.1x "Introduction to Computer Science and Programming
-using Python".
-
-It will store a branch for each of the problems sets. The commits
-will have the information regarding to the problem added or solved,
-so you can checkout each one.
-
-This file will change within each branch, containing the descriptions
-of the problems to be solved.
+Problem set 3.
+For this problem, you will implement a variation of the classic wordgame Hangman.
+In this problem, the second player will always be the computer, who will be picking 
+a word at random.
