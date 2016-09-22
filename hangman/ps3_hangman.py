@@ -50,9 +50,21 @@ def isWordGuessed(secretWord, lettersGuessed):
     returns: boolean, True if all the letters of secretWord are in lettersGuessed;
       False otherwise
     '''
-    # FILL IN YOUR CODE HERE...
+    if not lettersGuessed:
+        return False
+    #Indicate whether the word is in the secretWord
+    lenw = len(secretWord)
+    count = 0
+    #Iterate over the list
+    for l in secretWord:
+        if l in lettersGuessed:
+            count += 1
+    
+    if count == lenw:
+        return True
+    return False
 
-
+isWordGuessed('grapefruit', ['z', 'x', 'q', 'g', 'r', 'a', 'p', 'e', 'f', 'r', 'u', 'i', 't'])
 
 def getGuessedWord(secretWord, lettersGuessed):
     '''
