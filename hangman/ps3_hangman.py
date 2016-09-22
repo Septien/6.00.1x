@@ -64,7 +64,6 @@ def isWordGuessed(secretWord, lettersGuessed):
         return True
     return False
 
-isWordGuessed('grapefruit', ['z', 'x', 'q', 'g', 'r', 'a', 'p', 'e', 'f', 'r', 'u', 'i', 't'])
 
 def getGuessedWord(secretWord, lettersGuessed):
     '''
