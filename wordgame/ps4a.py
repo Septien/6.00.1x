@@ -264,7 +264,8 @@ def playHand(hand, wordList, n):
     #Halt
     return
 
-
+#wordList = loadWords()
+#playHand({'n':1, 'e':1, 't':1, 'a':1, 'r':1, 'i':2, 'x':1, 'p':2}, wordList, 7)
 #
 # Problem #5: Playing a game
 # 
