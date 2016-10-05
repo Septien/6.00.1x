@@ -35,3 +35,7 @@ following letters in the player's hand: l, m. Your task is to implement the func
 updateHand, which takes in two inputs - a hand and a word (string). updateHand uses letters 
 from the hand to spell the word, and then returns a copy of the hand, containing only the 
 letters remaining.
+
+-Problem 3.
+A valid word is in the word list; and it is composed entirely of letters from the current 
+hand. Implement the isValidWord function.
