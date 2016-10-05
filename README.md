@@ -43,3 +43,9 @@ hand. Implement the isValidWord function.
 -Problem 4.
 Implement the function 'calculateHandlen(hand)'. Return the length (number of letters)
 in the current hand.
+
+-Problem 5.
+Implement the function 'playHand'. In ps4a.py, note that in the function playHand, there 
+is a bunch of pseudocode. This pseudocode is provided to help guide you in writing your 
+function. Check out the Why Pseudocode? resource to learn more about the What and Why of 
+Pseudocode before you start coding your solution.
