@@ -49,3 +49,10 @@ Implement the function 'playHand'. In ps4a.py, note that in the function playHan
 is a bunch of pseudocode. This pseudocode is provided to help guide you in writing your 
 function. Check out the Why Pseudocode? resource to learn more about the What and Why of 
 Pseudocode before you start coding your solution.
+
+-Problem 6.
+A game consists of playing multiple hands. We need to implement one final function to 
+complete our word-game program. Write the code that implements the playGame function. 
+You should remove the code that is currently uncommented in the playGame body. Read through 
+the specification and make sure you understand what this function accomplishes. For the 
+game, you should use the HAND_SIZE constant to determine the number of cards in a hand.
