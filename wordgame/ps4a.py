@@ -156,7 +156,7 @@ def updateHand(hand, word):
     """
     newHand = hand.copy()
     for letter in word:
-        newHand[letter] = newHand.get(letter, 0) - 1
+        newHand[letter] = newHand.get(letter, 0) - 1 if newHand.get(letter, 0) > 0 else 0
     return newHand
 
 
