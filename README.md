@@ -39,3 +39,7 @@ letters remaining.
 -Problem 3.
 A valid word is in the word list; and it is composed entirely of letters from the current 
 hand. Implement the isValidWord function.
+
+-Problem 4.
+Implement the function 'calculateHandlen(hand)'. Return the length (number of letters)
+in the current hand.
